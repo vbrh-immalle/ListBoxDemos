@@ -34,5 +34,12 @@ namespace ListBoxDemos
         {
             listBox.Items.Add(toeTeVoegenItem.Text);
         }
+
+        private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            selectedIndexTextBlock.Text = listBox.SelectedIndex.ToString();
+            selectedItemTextBlock.Text = listBox.SelectedItem.ToString();
+            selectedValueTextBlock.Text = listBox.SelectedValue.ToString();
+        }
     }
 }

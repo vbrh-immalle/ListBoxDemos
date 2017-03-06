@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <StackPanel>
-        <ListBox x:Name="listBox">
-            <ListBoxItem>bread</ListBoxItem>
+        <ListBox x:Name="listBox" SelectionChanged="listBox_SelectionChanged">
+            <ListBoxItem Selected="ListBoxItem_Selected">bread</ListBoxItem>
             <ListBoxItem>milk</ListBoxItem>
             <ListBoxItem>coffee</ListBoxItem>
         </ListBox>
@@ -21,7 +21,20 @@
             <TextBox x:Name="toeTeVoegenItem">Vul iets in!</TextBox>
             <Button x:Name="voegItemToeButton" Click="voegItemToeButton_Click">Voeg item toe</Button>
         </StackPanel>
-        
-        
+        <StackPanel Orientation="Horizontal">
+            <Label>Geselecteerde index:</Label>
+            <TextBlock x:Name="selectedIndexTextBlock"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label>Geselecteerd item:</Label>
+            <TextBlock x:Name="selectedItemTextBlock"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label>Geselecteerde value:</Label>
+            <TextBlock x:Name="selectedValueTextBlock"></TextBlock>
+        </StackPanel>
+
+
+
     </StackPanel>
 </Window>
