@@ -29,5 +29,10 @@ namespace ListBoxDemos
         {
             aantalItemsTextBlock.Text = listBox.Items.Count.ToString();
         }
+
+        private void voegItemToeButton_Click(object sender, RoutedEventArgs e)
+        {
+            listBox.Items.Add(toeTeVoegenItem.Text);
+        }
     }
 }

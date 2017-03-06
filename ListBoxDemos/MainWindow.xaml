@@ -17,6 +17,10 @@
             <Label>Aantal items:</Label>
             <TextBlock x:Name="aantalItemsTextBlock">ongedefinieerd</TextBlock>
         </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBox x:Name="toeTeVoegenItem">Vul iets in!</TextBox>
+            <Button x:Name="voegItemToeButton" Click="voegItemToeButton_Click">Voeg item toe</Button>
+        </StackPanel>
         
         
     </StackPanel>
