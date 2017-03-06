@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:ListBoxDemos"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
+    <StackPanel>
+        <ListBox x:Name="listBox">
+            <ListBoxItem>bread</ListBoxItem>
+            <ListBoxItem>milk</ListBoxItem>
+            <ListBoxItem>coffee</ListBoxItem>
+        </ListBox>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="aantalItemsButton" Click="aantalItemsButton_Click">Update Aantal Items</Button>
+            <Label>Aantal items:</Label>
+            <TextBlock x:Name="aantalItemsTextBlock">ongedefinieerd</TextBlock>
+        </StackPanel>
         
-    </Grid>
+        
+    </StackPanel>
 </Window>

@@ -24,5 +24,10 @@ namespace ListBoxDemos
         {
             InitializeComponent();
         }
+
+        private void aantalItemsButton_Click(object sender, RoutedEventArgs e)
+        {
+            aantalItemsTextBlock.Text = listBox.Items.Count.ToString();
+        }
     }
 }
